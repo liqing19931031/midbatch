@@ -1,0 +1,316 @@
+.shops{
+	background: url(../banner/banner_content4.jpg) center top no-repeat;;
+	.shop{
+		height: 770px;
+		font-weight: bold;
+		font-size: 48px;
+		position: relative;
+		.go-by{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			background-color: #ff0000;
+			font-size: 34px;
+			font-weight: bold;
+			color: white;
+			padding-top: 30px;
+			box-sizing: border-box;
+			line-height: 100%;
+			text-align: center;
+			top: 0px;
+			left: 0px;
+			cursor: pointer;
+			display: none;
+		}
+		.shop1{
+			position: absolute;
+			left: 455px;
+			top: -40px;
+			color: @light-pink;
+			div{
+				position: absolute;
+				width: 100%;
+				height: 80px;
+				line-height: 80px;
+				text-align: center;
+			}
+		}
+		.shop2{
+			position: absolute;
+			left: 515px;
+			top: -40px;
+			color: @light-green;
+			div{
+				position: absolute;
+				width: 100%;
+				height: 80px;
+				line-height: 80px;
+				text-align: center;
+			}
+		}
+		.shop3{
+			position: absolute;
+			left: 430px;
+			top: -40px;
+			color: @blue;
+			div{
+				position: absolute;
+				width: 100%;
+				height: 80px;
+				line-height: 80px;
+				text-align: center;
+			}
+		}
+		.shop4{
+			position: absolute;
+			left: 515px;
+			top: -40px;
+			color: @purple;
+			div{
+				position: absolute;
+				width: 100%;
+				height: 80px;
+				line-height: 80px;
+				text-align: center;
+			}
+		}
+		.shop5{
+			position: absolute;
+			left: 440px;
+			top: -40px;
+			color: @gray;
+			div{
+				position: absolute;
+				width: 100%;
+				height: 80px;
+				line-height: 80px;
+				text-align: center;
+			}
+		}
+		.shop6{
+			position: absolute;
+			left: 440px;
+			top: -40px;
+			color: @light-blue;
+			div{
+				position: absolute;
+				width: 100%;
+				height: 80px;
+				line-height: 80px;
+				text-align: center;
+			}
+		}
+		.shop7{
+			position: absolute;
+			left: 480px;
+			top: -40px;
+			color: @light-yellow;
+			div{
+				position: absolute;
+				width: 100%;
+				height: 80px;
+				line-height: 80px;
+				text-align: center;
+			}
+		}
+		.shop8{
+			position: absolute;
+			left: 460px;
+			top: -40px;
+			color: @dark-blue;
+			div{
+				position: absolute;
+				width: 100%;
+				height: 80px;
+				line-height: 80px;
+				text-align: center;
+			}
+		}
+		.shop-content{
+			padding-top: 70px;
+			padding-bottom: 70px;
+			box-sizing: border-box;
+			height: 770px;
+			padding-left: 162px;
+			.content-banner{
+				width: 257px;
+				height: 300px;
+				float: left;
+				position: relative;
+				background-color: white;
+				img{
+					display: block;
+					width: 257px;
+					height: 200px;
+				}
+				.company-name{
+					position: absolute;
+					font-size: 18px;
+					width: 18px;
+					color: white;
+					font-weight: normal;
+					top: 170px;
+					text-align: center;
+					line-height: 30px;
+					background-color: rgba(0, 0, 0, 0.3);
+					width: 100%;
+					height: 30px;
+				}
+				.shop-text{
+					padding: 7px 5px;
+					position: relative;
+					font-size: 12px;
+					img{
+						display: block;
+						right: 0px;
+						position: absolute;
+						width: 52px;
+						height: 73px;
+					}
+					.discount{
+						position: absolute;
+						right: 15px;
+						top: 35px;
+						color: #ff0000;
+					}
+					.top-text{
+						text-align: center;
+					}
+					.old-price{
+						margin: 7px 0 0 0;
+						text-decoration:line-through;
+						color: #dddddd;
+						text-align: left;
+					}
+					.new-price{
+						color: #ff0000;
+						text-align: center;
+					}
+					.big{
+						font-size: 24px;
+					}
+				}
+				.shop-text:hover > .go-by{
+					display: block;
+				}
+			}
+			.content-slide{
+				position: relative;
+				width: 500px;
+				height: 300px;
+				margin: 0 12px;
+				float: left;
+				background-color: white;
+				.slide-img{
+					width: 500px;
+					height: 300px;
+					position: relative;
+					img{
+						position: absolute;
+						transition: all 0.4s ease-in-out;
+						opacity: 0;
+						width: 500px;
+						height: 300px;
+					}
+				}
+				.slide-dot{
+					bottom: 10px;
+					left: 200px;
+					position: absolute;
+					a{
+						display: inline-block;
+						width: 10px;
+						height: 10px;
+						background: #347fb9;
+						border-radius: 4px;
+						transition: all 0.4s ease-in-out;
+						line-height: 100px;
+						margin-right: 4px;
+						overflow: hidden;
+					}
+					.on{
+						width: 20px;
+						background-color: yellow;
+					}
+				}
+			}
+		}
+		.shop-line{
+			width: 198px;
+			height: 300px;
+			position: relative;
+			background-color: white;
+			float: left;
+			img{
+				width: 198px;
+				height: 200px;
+				display: block;
+			}
+			.company-name{
+				position: absolute;
+				font-size: 18px;
+				width: 18px;
+				color: white;
+				font-weight: normal;
+				top: 170px;
+				text-align: center;
+				line-height: 30px;
+				background-color: rgba(0, 0, 0, 0.3);
+				width: 100%;
+				height: 30px;
+			}
+			.shop-text{
+				padding: 7px 5px;
+				position: relative;
+				height: 100px;
+				box-sizing: border-box;
+				font-size: 12px;
+				img{
+					display: block;
+					right: 0px;
+					position: absolute;
+					width: 52px;
+					height: 73px;
+				}
+				.discount{
+					position: absolute;
+					right: 15px;
+					top: 35px;
+					color: #ff0000;
+				}
+				.top-text{
+					text-align: center;
+				}
+				.old-price{
+					margin: 7px 0 0 0;
+					text-decoration:line-through;
+					color: #dddddd;
+					text-align: left;
+				}
+				.new-price{
+					color: #ff0000;
+					text-align: center;
+				}
+				.big{
+					font-size: 24px;
+				}
+				&.special{
+					.new-price{
+						margin-top: 10px;
+						font-size: 18px;
+					}
+					.old-price{
+						text-decoration: none;
+						font-weight: normal;
+					}
+				}
+			}
+			.shop-text:hover > .go-by{
+				display: block;
+			}
+		}
+		.shop-line + .shop-line{
+			margin-left: 12px;
+		}
+	}
+}
