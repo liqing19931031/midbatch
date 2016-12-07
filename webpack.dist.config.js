@@ -4,8 +4,6 @@ var path = require('path');
 var base = {
 	// 页面入口文件配置
 	entry: [
-		'webpack/hot/dev-server',
-		'webpack-dev-server/client?http://localhost:8888/',
 		path.join(__dirname, 'src/main.js')
 	],
 	// 入口文件输出配置
@@ -60,10 +58,8 @@ var base = {
     devServer: {
     	contentBase: 'E:/project/midbatch/themes/mall/tmall/styles/default/js',
 	    colors: true,//终端中输出结果为彩色
-	    hot: true,
 	    progress: true,
-	    historyApiFallback: true,//不跳转
-	    inline: true//实时刷新
+	    historyApiFallback: true//不跳转
 	},
 	plugins: [
 	    new webpack.HotModuleReplacementPlugin()

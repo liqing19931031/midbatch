@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "dev": "webpack-dev-server --hot --inline  --colors --port 8888 --host 0.0.0.0 --config webpack.dev.config.js",
-    "dist": "webpack --colors --port 8888 --host 0.0.0.0 --config webpack.dist.config.js"
+    "dist": "webpack --colors --config webpack.dist.config.js"
   },
   "author": "Aaron",
   "license": "ISC",

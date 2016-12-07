@@ -4,12 +4,12 @@ import { slide } from 'slide';
 var dist = 'http://pf.test.com/themes/mall/tmall/styles/default/images/stockpile/'
 // var images1 = ['images/shop_cp/shop_cp-banner.jpg', 'images/shop_cp/shop_cp-banner_2.jpg', 'images/shop_cp/shop_cp-banner_3.jpg'];
 // var images2 = ['images/shop_fzfzhc_2/shop_fzfzhc_2.jpg', 'images/shop_fzfzhc_2/shop_fzfzhc_4.png', 'images/shop_fzfzhc_2/shop_fzfzhc_6.png'];
-var images1 = [dist + 'images/shop_cp/shop_cp-banner.jpg', dist + 'images/shop_cp/shop_cp-banner_2.jpg', dist + 'images/shop_cp/shop_cp-banner_3.jpg'];
-var images2 = [dist + 'images/shop_fzfzhc_2/shop_fzfzhc_2.jpg', dist + 'images/shop_fzfzhc_2/shop_fzfzhc_4.png', dist + 'images/shop_fzfzhc_2/shop_fzfzhc_6.png'];
+var images1 = [{ pic: dist + 'images/shop_cp/shop_cp-banner.jpg', url: 'http://pf.test.com'}, { pic: dist + 'images/shop_cp/shop_cp-banner_2.jpg', url: 'http://pf.test.com'}, { pic: dist + 'images/shop_cp/shop_cp-banner_3.jpg', url: 'http://pf.text.com' }];
+var images2 = [{ pic: dist + 'images/shop_fzfzhc_2/shop_fzfzhc_2.jpg', url: 'http://pf.test.com'}, { pic: dist + 'images/shop_fzfzhc_2/shop_fzfzhc_4.png', url: 'http://pf.test.com'}, { pic: dist + 'images/shop_fzfzhc_2/shop_fzfzhc_6.png', url: 'http://pf.text.com'}];
 var slide1 = new slide($('.slide'), images1);
 $('.content-slide').each(function(index, item) {
 	var slide2 = new slide($(item), images2);
-	slide2.render().init();
+	slide2.render().init().startSlide();
 })
 window.onscroll = function () {
 	var allTop = document.body.scrollTop;
@@ -27,4 +27,4 @@ $('.nav-end').click(function(){
 	$('body').animate({ scrollTop: 0 }, 500);
 	return false;
 })
-slide1.render().init();
+slide1.render().init().startSlide();
