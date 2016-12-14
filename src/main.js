@@ -1,9 +1,7 @@
 require('css/index.less');
 var $ = require('jquery');
 import { slide } from 'slide';
-var dist = '/themes/mall/tmall/styles/default/tunhuo/'
-// var images1 = ['images/tunhuo-banner/shop_cp-banner.jpg', 'images/tunhuo-banner/shop_cp-banner_2.jpg', 'images/tunhuo-banner/shop_cp-banner_3.jpg'];
-// var images2 = ['images/tunhuo-banner/shop_fzfzhc_2.jpg', 'images/tunhuo-banner/shop_fzfzhc_4.png', 'images/tunhuo-banner/shop_fzfzhc_6.png'];
+var dist = 'images/tunhuo/';
 var images1 = [{ pic: dist + '1/b-1.jpg', url: ''}, { pic: dist + '1/b-2.jpg', url: ''}, { pic: dist + '1/b-3.jpg', url: '' }];
 var images = [
 	[
@@ -61,7 +59,7 @@ window.onscroll = function () {
 }
 $('body').trigger('scroll');
 $('.nav-end').click(function(){
-	$('body').animate({ scrollTop: 0 }, 500);
+	$('html, body').animate({ scrollTop: 0 }, 500);
 	return false;
-})
+});
 slide1.render().init().startSlide();

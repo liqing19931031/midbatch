@@ -1,0 +1,231 @@
+@import 'mobilenav.less';
+.color1{
+	background-color: #fb086b;
+}
+.color2{
+	background-color: #4ae1f4;
+}
+.color3{
+	background-color: #f76f0f;
+}
+.color4{
+	background-color: #fe03fd;
+}
+.color5{
+	background-color: #3ef116;
+}
+.color6{
+	background-color: #5564ec;
+}
+.color7{
+	background-color: #0df2de;
+}
+.color8{
+	background-color: #f71419;
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Microsoft yahei'
+}
+.banner{
+	width: 100%;
+	height: 6.666667rem;
+	background: url(../mobile-shop/banner@2x.png);
+	background-size: 100% auto;
+}
+.clearBoth{
+	clear: both;
+}
+.slide{
+	height: 4.0rem;
+	width: 100%;
+	position: relative;
+	.slide-img{
+		img{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			transition: all 0.4s ease-in-out;
+			&.on{
+				z-index: 10;
+			}
+		}
+	}
+	.slide-dot{
+		position: absolute;
+		bottom: 0.133333rem;
+		left: 6.933333rem;
+		z-index: 9999;
+		a{
+			display: inline-block;
+		    width: 0.266667rem;
+		    height: 0.266667rem;
+		    background: #347fb9;
+		    margin-right: 0.053333rem;
+		    border-radius: 0.12rem;
+		    transition: all 0.4s ease-in-out;
+		    overflow: hidden;
+		}
+		.on{
+			width: 0.8rem;
+			background-color: yellow;
+		}
+	}
+}
+section{
+	height: 0.8rem;
+	font-weight: bold;
+	text-align: center;
+	font-size: 0.64rem;
+	line-height: 0.8rem;
+	color: white;
+	&.special{
+		color: #ff0000;
+		background-color: #fcec16;
+	}
+}
+.shops-content{
+	height: 25.466667rem;
+}
+.shops{
+	position: relative;
+	.slide{
+		margin-bottom: 0.133333rem;
+	}
+	.pre-rect{
+		width: 4.973333rem;
+		height: 4.933333rem;
+		font-size: 0.48rem;
+		font-weight: bold;
+		padding: 0.266667rem;
+		box-sizing: border-box;
+		position: relative;
+		float: left;
+		color: white;
+		margin-top: 0.053333rem;
+		&.bg1{
+			background: url(../mobile-shop/shop_zpth_1.jpg) center top no-repeat;
+			background-size: 100% 100%;
+		}
+		&.bg2{
+			background: url(../mobile-shop/shop_zpth_2.jpg) center top no-repeat;
+			background-size: 100% 100%;
+		}
+		&.bg3{
+			background: url(../mobile-shop/shop_zpth_3.jpg) center top no-repeat;
+			background-size: 100% 100%;
+		}
+		&.bg4{
+			background: url(../mobile-shop/shop_zpth_4.jpg) center top no-repeat;
+			background-size: 100% 100%;
+		}
+		&.bg5{
+			background: url(../mobile-shop/shop_zpth_5.jpg) center top no-repeat;
+			background-size: 100% 100%;
+		}
+		&.bg6{
+			background: url(../mobile-shop/shop_zpth_6.jpg) center top no-repeat;
+			background-size: 100% 100%;
+		}
+		.cuxiao{
+			position: absolute;
+			top: 0;
+			right: 0;
+			font-size: 0.24rem;
+			font-weight: bold;
+			text-align: center;
+			line-height: 0.4rem;
+			color: white;
+			.baoyou{
+				width: 0.666667rem;
+				float: left;
+				height: 0.4rem;
+				background-color: black;
+			}
+			.buy{
+				float: left;
+				width: 1.333333rem;
+				height: 0.4rem;
+				background-color: #fc0f03;
+			}
+		}
+		.pre-title{
+			width: 1.066667rem;
+			margin-bottom: 0.4rem;
+		}
+	}
+	.shop-big{
+		width: 4.973333rem;
+		height: 7.333333rem;
+		float: left;
+		margin-bottom: 0.08rem;
+		img{
+			display: block;
+			width: 100%;
+			height: 5.066667rem;
+		}
+		.shop-text{
+			width: 4.973333rem;
+			height: 2.266667rem;
+			box-sizing: border-box;
+			padding: 0.133333rem;
+			background-color: white;
+			.top-text{
+				font-size: 0.4rem;
+				color: #0b0b0b;
+			}
+			.new-price{
+				font-size: 0.4rem;
+				color: #333333;
+			}
+			.big{
+				font-size: 0.666667rem;
+				color: #fb076c;
+			}
+		}
+	}
+	.shop-small{
+		width: 3.28rem;
+		height: 5.333333rem;
+		float: left;
+		margin-bottom: 0.08rem;
+		img{
+			display: block;
+			width: 100%;
+			height: 3.28rem;
+		}
+		.shop-text{
+			width: 100%;
+			height: 2.266667rem;
+			box-sizing: border-box;
+			padding: 0.133333rem;
+			background-color: white;
+			.top-text{
+				font-size: 0.4rem;
+				color: #0b0b0b;
+			}
+			.new-price{
+				font-size: 0.32rem;
+				color: #333333;
+			}
+			.big{
+				font-size: 0.48rem;
+				color: #fb076c;
+			}
+		}
+	}
+	.pre-rect:nth-child(2n){
+		margin-left: 0.053333rem;
+	}
+	.shop-big:nth-child(2n){
+		margin-left: 0.053333rem;
+	}
+	.shop-small + .shop-small{
+		margin-left: 0.08rem;
+	}
+}
+.baoping{
+	background-color: #ff0000;
+	height: 37.813333rem;
+}

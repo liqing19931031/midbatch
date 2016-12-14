@@ -3,14 +3,15 @@ var webpack = require('webpack');
 var path = require('path');
 var base = {
 	// 页面入口文件配置
-	entry: { 
-		app: path.join(__dirname, 'src/main.js'),
-		mobile: path.join(__dirname, 'src/mobile.js')
-	},
+	entry: [
+		'webpack/hot/dev-server',
+		'webpack-dev-server/client?http://localhost:8888/',
+		path.join(__dirname, 'src/mobile.js')
+	],
 	// 入口文件输出配置
 	output: {
-		path: __dirname + '/static',
-		filename: '[name].js'
+		path: __dirname + '/static/mobile',
+		filename: 'mobile.js'
 	},
 	module: {
 		// 加载器配置
@@ -50,14 +51,14 @@ var base = {
 		root: [
 			path.join(__dirname + '/src'),
 			path.join(__dirname + '/node_modules'),
-			path.join(__dirname + '/static'),
+			path.join(__dirname + '/static/mobile'),
 			path.join(__dirname)
 		],
 		// 这里用来指定模块的后缀,这样你再引入模块的时候就不需要再写后缀名了
         extensions: ['', '.js', '.less', '.jsx']
     },
     devServer: {
-    	contentBase: './static',
+    	contentBase: './static/mobile',
 	    colors: true,//终端中输出结果为彩色
 	    hot: true,
 	    progress: true,
